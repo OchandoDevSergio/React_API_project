@@ -1,4 +1,5 @@
 
+import {useEffect, useState} from 'react';
 import { CharacterCard } from '../../common/CharacterCard/CharacterCard';
 import { bringCharacters } from '../../services/apiCalls';
 import './Home.css';
