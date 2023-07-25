@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
 
-    height: 10vh;
-    width: 5vw;
+    height: 23vh;
+    width: 13vw;
 
     background-color:chartreuse;
 
@@ -14,4 +14,15 @@
     align-items: center;
     flex-direction: column;
 
+    text-align: center;
+
+    border-radius: 5% 5% 5% 5%;
+    border: 0.1em solid rgb(129, 112, 25);
+}
+
+.picture {
+    height: 12vh;
+    width: 12vw;
+
+    border: 0.1em solid rgb(129, 112, 25);
 }

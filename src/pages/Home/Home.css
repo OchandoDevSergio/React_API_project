@@ -10,7 +10,19 @@
     background-color:darkorange;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items:flex-start;
 
+    flex-direction: column;
+}
+
+.rowDesign {
+    height: 33vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    
+    flex-direction: row;
 }
