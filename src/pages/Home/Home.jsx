@@ -42,12 +42,12 @@ export const Home = () => {
                                     name={person.name}
                                     picture={person.image}
                                     status={person.status}
-                                    
+                                    person={person}
                                 />
                             )
                         }
                     )}
-                    
+
                 </div>
 
                 )
