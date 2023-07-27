@@ -29,14 +29,16 @@ export const Home = () => {
             {characters.length > 0 
 
                 ? (<div className='homeDesign'>
-                     <div className='rowDesign'>
+
                      {characters.map(
                         person => {
-                            if (person.id <268)
                             return (
                                 <CharacterCard
                                 
+                                    // Key es siempre una palabra reservada en React
                                     key={person.id}
+                                    ////////////////////////////////
+                                    id={person.id}
                                     name={person.name}
                                     picture={person.image}
                                     status={person.status}
@@ -45,41 +47,7 @@ export const Home = () => {
                             )
                         }
                     )}
-                     </div>
-                     <div className='rowDesign'>
-                     {characters.map(
-                        person => {
-                            if ((person.id >267)&&(person.id < 275))
-                            return (
-                                <CharacterCard
-                                
-                                    key={person.id}
-                                    name={person.name}
-                                    picture={person.image}
-                                    status={person.status}
-                                    
-                                />
-                            )
-                        }
-                    )}
-                     </div>
-                     <div className='rowDesign'>
-                     {characters.map(
-                        person => {
-                            if (person.id >274)
-                            return (
-                                <CharacterCard
-                                
-                                    key={person.id}
-                                    name={person.name}
-                                    picture={person.image}
-                                    status={person.status}
-                                    
-                                />
-                            )
-                        }
-                    )}
-                     </div>
+                    
                 </div>
 
                 )
